@@ -4,9 +4,9 @@ using Microsoft.Xna.Framework;
 
 namespace CoreFramework.Game
 {
-    class MathExtLib
+    public static class MathExtLib
     {
-        public static double Distance(Vector2 pos1, Vector2 pos2)
+        public static double Distance(this Vector2 pos1, Vector2 pos2)
         {
             return Math.Sqrt(Math.Pow(pos2.X - pos1.X, 2) + Math.Pow(pos2.Y - pos1.Y, 2));
         }
