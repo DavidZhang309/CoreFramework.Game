@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace CoreFramework.Game.Graphics
@@ -17,11 +18,11 @@ namespace CoreFramework.Game.Graphics
             Renderers = new List<IRenderer>();
         }
 
-        public void Render(SpriteBatch batch, Camera camera)
+        public void Render(GameTime time, SpriteBatch batch, Camera camera)
         {
             foreach(IRenderer renderer in Renderers)
             {
-                renderer.Render(batch, camera);
+                renderer.Render(time, batch, camera);
             }
         }
     }

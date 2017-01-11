@@ -1,9 +1,10 @@
-﻿using Microsoft.Xna.Framework.Graphics;
+﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace CoreFramework.Game.Graphics
 {
     public interface IRenderer
     {
-        void Render(SpriteBatch batch, Camera camera);
+        void Render(GameTime time, SpriteBatch batch, Camera camera);
     }
 }
