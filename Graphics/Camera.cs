@@ -35,7 +35,7 @@ namespace CoreFramework.Game.Graphics
             return (position - Origin) / Scale + Position;
         }
 
-        public void Move(int x, int y)
+        public void Move(float x, float y)
         {
             Position = Position + new Vector2(x, y);
         }
