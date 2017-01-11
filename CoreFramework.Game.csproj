@@ -44,6 +44,9 @@
   <ItemGroup>
     <Compile Include="Application\BaseGameApplication.cs" />
     <Compile Include="Application\IApplication.cs" />
+    <Compile Include="Controls\ControlSet.cs" />
+    <Compile Include="Controls\Keyboard.cs" />
+    <Compile Include="Controls\Mouse.cs" />
     <Compile Include="Entity\BaseActor.cs" />
     <Compile Include="Entity\BaseBox2dActor.cs" />
     <Compile Include="Entity\EntitySet.cs" />
@@ -58,7 +61,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controls\" />
+    <Folder Include="Graphics\UI\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="lib\Box2D.XNA\Box2D.XNA.dll" />
