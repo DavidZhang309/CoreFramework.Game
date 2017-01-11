@@ -42,6 +42,8 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\BaseGameApplication.cs" />
+    <Compile Include="Application\IApplication.cs" />
     <Compile Include="Entity\BaseActor.cs" />
     <Compile Include="Entity\BaseBox2dActor.cs" />
     <Compile Include="Entity\EntitySet.cs" />
