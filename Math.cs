@@ -17,5 +17,17 @@ namespace CoreFramework.Game
             pos.Y *= (float)Math.Sin(angle);
             return Vector2.Add(pos, origin);
         }
+
+        /// <summary>
+        /// Returns a vector with length and angle from origin
+        /// </summary>
+        /// <param name="length"></param>
+        /// <param name="angle"></param>
+        /// <returns></returns>
+        public static Vector2 CalculateVector(float length, float angle)
+        {
+            //angle -= MathHelper.PiOver2;
+            return new Vector2(length * (float)Math.Cos(angle), length * (float)Math.Sin(angle));
+        }
     }
 }
