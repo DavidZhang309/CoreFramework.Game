@@ -30,4 +30,32 @@ namespace CoreFramework.Game
             return new Vector2(length * (float)Math.Cos(angle), length * (float)Math.Sin(angle));
         }
     }
+
+    /// <summary>
+    /// Math object for computing unit to pixels
+    /// </summary>
+    public class UnitCalculator
+    {
+        public static float GetLengthTime(GameTime time, float length, float rate, float size)
+        {
+            return length * (rate * time.ElapsedGameTime.Milliseconds / 1000f) * size;
+        }
+
+        /// <summary>
+        /// The unit size in pixels
+        /// </summary>
+        public float UnitSize { get; set; }
+
+        /// <summary>
+        /// Gets 
+        /// </summary>
+        /// <param name="time">Current time representation</param>
+        /// <param name="unitLength">the length being calculated</param>
+        /// <param name="unitRate">the speed/rate of unit travelling</param>
+        /// <returns></returns>
+        public float GetLengthTime(GameTime time, float unitLength, float unitRate)
+        {
+            return UnitCalculator.GetLengthTime(time, unitLength, unitRate, UnitSize);
+        }
+    }
 }
