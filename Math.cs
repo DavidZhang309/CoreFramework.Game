@@ -44,7 +44,7 @@ namespace CoreFramework.Game
         /// <summary>
         /// The unit size in pixels
         /// </summary>
-        public float UnitSize { get; set; }
+        public int UnitSize { get; set; }
 
         /// <summary>
         /// Gets 
