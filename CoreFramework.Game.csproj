@@ -53,6 +53,7 @@
     <Compile Include="Graphics\DrawUtils.cs" />
     <Compile Include="Graphics\Camera.cs" />
     <Compile Include="Entity\IEntity.cs" />
+    <Compile Include="Graphics\Grid\TileSetGraphicsProperties.cs" />
     <Compile Include="Graphics\IRenderer.cs" />
     <Compile Include="Graphics\RenderSet.cs" />
     <Compile Include="Graphics\Tile.cs" />
